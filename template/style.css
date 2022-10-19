@@ -25,17 +25,17 @@ p {
 .container {
     width: 100%;
     max-width: 1440px;
-    margin: 0 120px;
+    margin: 0 160px;
     padding-top: 100px;
 }
 
-/*---Menu---*/
+/*---Maker---*/
 
 .menu__inner {
     background-color: #eff8fd;
 
     max-width: 1200px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 0 50px;
 }
 
@@ -44,24 +44,79 @@ p {
     padding-top: 50px;
 }
 
+.maker__title {
+    font-weight: 600;
+    font-size: 43px;
+}
+
 .consist {
     padding-top: 30px;
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.consist__item {
-    
-}
-
 .item__icon {
-    max-width: 30px;
-    height: 30px;
+    max-width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    z-index: 1000;
+    box-shadow: -2px 0 10px 5px rgba(0,0,0,0.1);
 }
 
-.item__border {
-    border: 1px solid black;
-    border-radius: 50%;
-    max-width: 70px;
-    height: 100px;
+.maker__btn {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+    background: #fff;
+    opacity: 0.8;
+    box-shadow: -2px 0 10px 5px rgba(0,0,0,0.1);
+
+    position: relative;
+    padding: 10px 20px 10px 25px;
+    bottom: 25px;
+    right: 15px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.1s linear;
+
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 15px;
 }
+
+.maker__btn:hover {
+    background: linear-gradient(to top, #5cc730 ,#1fd619);
+    box-shadow: 3px 5px 10px 1px #459428;
+    color: #e0f2fa;
+}
+
+/*---Pizza---*/
+
+.pizza {
+    display: flex;
+    justify-content: center;
+}
+
+.pizza__image {
+    position: relative;
+    z-index: 500;
+}
+
+.pizza__large {
+    max-width: 500px;
+    height: 500px;
+    background: #101012;
+    border-radius: 50%;
+}
+
+/*.pizza__medium {
+    max-width: 400px;
+    height: 400px;
+    background: #101012;
+    border-radius: 50%;
+}*/
+
