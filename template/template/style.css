@@ -1,0 +1,92 @@
+body {
+    background-color: #e0f2fa;
+    font-family: 'Bree Serif', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #101012;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+h1 {
+    letter-spacing: 2px;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 120px;
+    padding-top: 100px;
+}
+
+/*---Maker---*/
+
+.menu__inner {
+    background-color: #eff8fd;
+
+    max-width: 1200px;
+    border-radius: 10px;
+    padding: 0 50px;
+}
+
+.maker {
+    max-width: 250px;
+    padding-top: 50px;
+}
+
+.consist {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.item__icon {
+    max-width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.maker__btn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    background: #fff;
+    opacity: 0.8;
+
+    position: relative;
+    padding: 10px 15px 10px 15px;
+    bottom: 23px;
+    right: 10px;
+
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.1s linear;
+
+    font-weight: 700;
+}
+
+.maker__btn:hover {
+    background: rgb(57, 234, 57);
+}
+
+/*---Pizza---*/
+
+.pizza {
+    display: flex;
+    justify-content: center;
+}
+
