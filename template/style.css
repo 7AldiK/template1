@@ -22,26 +22,25 @@ p {
     margin: 0 0 10px 0;
 }
 
-.container {
-    width: 100%;
+.menu {
     max-width: 1440px;
     margin: 0 160px;
     padding-top: 100px;
 }
 
-/*---Maker---*/
-
-.menu__inner {
-    background-color: #eff8fd;
-
+.container {
     max-width: 1200px;
+    width: 100%;
+    padding: 50px 100px;
+
     border-radius: 20px;
-    padding: 0 50px;
+    background-color: #eff8fd;
 }
+
+/*---Maker---*/
 
 .maker {
     max-width: 250px;
-    padding-top: 50px;
 }
 
 .maker__title {
@@ -97,8 +96,15 @@ p {
 /*---Pizza---*/
 
 .pizza {
+    /* display: flex;
+    justify-content: center; */
+}
+
+.pizza__diameter {
+    max-width: 700px;
+    height: 700px;
+    background: #1fd619;
     display: flex;
-    justify-content: center;
 }
 
 .pizza__image {
@@ -107,16 +113,51 @@ p {
 }
 
 .pizza__large {
+    position: relative;
+    max-width: 700px;
+    height: 700px;
+    background: #101012;
+    border-radius: 50%;
+    z-index: 100px;
+}
+
+.pizza__medium {
+    position: relative;
     max-width: 500px;
     height: 500px;
     background: #101012;
     border-radius: 50%;
+    z-index: 200px;
 }
 
-/*.pizza__medium {
-    max-width: 400px;
-    height: 400px;
-    background: #101012;
-    border-radius: 50%;
-}*/
+/*---Bar---*/
 
+.bar {
+    max-width: 1000px;
+    height: 300px;
+    background: #fff;
+    border-radius: 30px;
+    
+}
+
+.bar__inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 60px;
+    display: flex;
+}
+
+.left-btn {
+    height: 90px;
+    max-width: 40px;
+    background: rgb(47, 139, 192);
+    border-radius: 10px;
+    
+    
+}
+
+.ingredients__item {
+    max-width: 200px;
+    height: 200px;
+    background: #1fd619;
+}
