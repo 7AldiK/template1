@@ -96,15 +96,9 @@ p {
 /*---Pizza---*/
 
 .pizza {
-    /* display: flex;
-    justify-content: center; */
-}
-
-.pizza__diameter {
-    max-width: 700px;
-    height: 700px;
-    background: #1fd619;
     display: flex;
+    justify-content: center;
+    max-width: 700px;
 }
 
 .pizza__image {
@@ -114,21 +108,22 @@ p {
 
 .pizza__large {
     position: relative;
-    max-width: 700px;
+    width: 700px;
     height: 700px;
-    background: #101012;
+    background: #508a80;
     border-radius: 50%;
     z-index: 100px;
 }
 
 .pizza__medium {
     position: relative;
-    max-width: 500px;
+    width: 500px;
     height: 500px;
-    background: #101012;
+    background: #282883;
     border-radius: 50%;
     z-index: 200px;
 }
+
 
 /*---Bar---*/
 
