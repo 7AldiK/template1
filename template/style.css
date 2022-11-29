@@ -80,7 +80,7 @@ p {
 
     text-decoration: none;
     cursor: pointer;
-    transition: background 0.1s linear;
+    transition: all 0.2s linear;
 
     font-weight: 700;
     font-family: sans-serif;
@@ -96,33 +96,48 @@ p {
 /*---Pizza---*/
 
 .pizza {
+    width: 1000px;
+    height: 900px;
     display: flex;
     justify-content: center;
-    max-width: 700px;
+    flex-wrap: wrap;
 }
 
-.pizza__image {
-    position: relative;
-    z-index: 500;
+.svg {
+    display: flex;
+    justify-content: center;
 }
 
-.pizza__large {
+.svg__large {
+    position: absolute;
+    width: 900px;
+    height: 900px;
+}
+
+.svg__medium {
     position: relative;
     width: 700px;
     height: 700px;
-    background: #508a80;
-    border-radius: 50%;
-    z-index: 100px;
+    top: 80px;
 }
 
-.pizza__medium {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    background: #282883;
-    border-radius: 50%;
-    z-index: 200px;
+.circle {
+    cx: 50%;
+    cy: 50%;
+    stroke: #e3eaee;
+    stroke-width: 5px;
 }
+
+.circle__large {
+    r: 400px;
+    fill: #f2fafd;
+}
+
+.circle__medium {
+    r: 200px;
+    fill: #e6f0f2;
+}
+
 
 
 /*---Bar---*/
